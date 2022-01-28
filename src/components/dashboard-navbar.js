@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { AppBar, Avatar, Badge, Box, IconButton, Toolbar, Tooltip } from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
+import MenuIcon from '@mui/icons-material/Menu';  
+import LogoDevIcon from '@mui/icons-material/LogoDev';
 import { Bell as BellIcon } from '../icons/bell';
 import { UserCircle as UserCircleIcon } from '../icons/user-circle';
 import { Users as UsersIcon } from '../icons/users';
+import { blue } from '@mui/material/colors';
 
 const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
+  backgroundColor: '#12456C',
   boxShadow: theme.shadows[3]
 }));
 
@@ -46,38 +47,30 @@ export const DashboardNavbar = (props) => {
           >
             <MenuIcon fontSize="small" />
           </IconButton>
-          <Tooltip title="Search">
+          <Tooltip title="Fishbone Solutions">
             <IconButton sx={{ ml: 1 }}>
-              <SearchIcon fontSize="small" />
+              <LogoDevIcon></LogoDevIcon>
             </IconButton>
           </Tooltip>
           <Box sx={{ flexGrow: 1 }} />
-          <Tooltip title="Contacts">
+          <Tooltip title="Portal">
             <IconButton sx={{ ml: 1 }}>
               <UsersIcon fontSize="small" />
             </IconButton>
           </Tooltip>
+          <Box sx={{ flexGrow: 67 }} />
           <Tooltip title="Notifications">
             <IconButton sx={{ ml: 1 }}>
               <Badge
                 badgeContent={4}
-                color="primary"
+                color="info"
                 variant="dot"
               >
                 <BellIcon fontSize="small" />
               </Badge>
             </IconButton>
           </Tooltip>
-          <Avatar
-            sx={{
-              height: 40,
-              width: 40,
-              ml: 1
-            }}
-            src="/static/images/avatars/avatar_1.png"
-          >
-            <UserCircleIcon fontSize="small" />
-          </Avatar>
+         
         </Toolbar>
       </DashboardNavbarRoot>
     </>

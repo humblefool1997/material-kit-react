@@ -18,33 +18,27 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 const products = [
   {
     id: uuid(),
-    name: 'Dropbox',
+    name: 'Count of fault type 1 ',
     imageUrl: '/static/images/products/product_1.png',
     updatedAt: subHours(Date.now(), 2)
   },
   {
     id: uuid(),
-    name: 'Medium Corporation',
-    imageUrl: '/static/images/products/product_2.png',
+    name: 'Count of fault type 2 ',
+    imageUrl: '/static/images/products/product_1.png',
     updatedAt: subHours(Date.now(), 2)
   },
   {
     id: uuid(),
-    name: 'Slack',
-    imageUrl: '/static/images/products/product_3.png',
+    name: 'Count of fault type 3',
+    imageUrl: '/static/images/products/product_1.png',
     updatedAt: subHours(Date.now(), 3)
   },
   {
     id: uuid(),
-    name: 'Lyft',
-    imageUrl: '/static/images/products/product_4.png',
+    name: 'Total Faults',
+    imageUrl: '/static/images/products/product_1.png',
     updatedAt: subHours(Date.now(), 5)
-  },
-  {
-    id: uuid(),
-    name: 'GitHub',
-    imageUrl: '/static/images/products/product_5.png',
-    updatedAt: subHours(Date.now(), 9)
   }
 ];
 
@@ -52,7 +46,7 @@ export const LatestProducts = (props) => (
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}
-      title="Latest Products"
+      title="Compressor statistics"
     />
     <Divider />
     <List>
@@ -98,7 +92,8 @@ export const LatestProducts = (props) => (
         size="small"
         variant="text"
       >
-        View all
+      Last maintained date
+      
       </Button>
     </Box>
   </Card>

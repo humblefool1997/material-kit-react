@@ -1,29 +1,25 @@
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-import { Budget } from '../components/dashboard/budget';
 import { LatestOrders } from '../components/dashboard/latest-orders';
 import { LatestProducts } from '../components/dashboard/latest-products';
 import { Sales } from '../components/dashboard/sales';
+import dynamic  from 'next/dynamic';
 import { DashboardLayout } from '../components/dashboard-layout';
-import dynamic from "next/dynamic"
-
-
 
 const Plot = dynamic(
-  () => {
-    return import("react-plotly.js")
-  },
-  { ssr: false}
-  
-  )
+() => {
+  return import("react-plotly.js")
+},
+{ ssr: false}
+
+)
 
 
 
 
 
 
-
-const Dashboard = () => (
+const Compressorstats = () => (
   <>
     <Head>
       <title>
@@ -136,11 +132,10 @@ const Dashboard = () => (
   </>
 );
 
-
-Dashboard.getLayout = (page) => (
+Compressorstats.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
 );
 
-export default Dashboard;
+export default Compressorstats;

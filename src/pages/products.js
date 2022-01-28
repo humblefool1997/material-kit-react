@@ -9,7 +9,8 @@ const Products = () => (
   <>
     <Head>
       <title>
-        Products | Material Kit
+      Compressor Location Tracker
+
       </title>
     </Head>
     <Box
@@ -34,7 +35,7 @@ const Products = () => (
                 md={6}
                 xs={12}
               >
-                <ProductCard product={product} />
+               
               </Grid>
             ))}
           </Grid>
@@ -46,11 +47,7 @@ const Products = () => (
             pt: 3
           }}
         >
-          <Pagination
-            color="primary"
-            count={3}
-            size="small"
-          />
+          
         </Box>
       </Container>
     </Box>

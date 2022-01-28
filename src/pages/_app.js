@@ -18,7 +18,7 @@ const App = (props) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>
-          Material Kit Pro
+           Stadler Dashboard Demo UI
         </title>
         <meta
           name="viewport"

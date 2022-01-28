@@ -113,7 +113,7 @@ export const Sales = (props) => {
         sx={{
           display: 'flex',
           justifyContent: 'flex-end',
-          p: 2
+          p: 4
         }}
       >
         <Button
