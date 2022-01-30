@@ -13,7 +13,6 @@ import { User as UserIcon } from '../icons/user';
 import { UserAdd as UserAddIcon } from '../icons/user-add';
 import { Users as UsersIcon } from '../icons/users';
 import { XCircle as XCircleIcon } from '../icons/x-circle';
-import { Logo } from './logo';
 import { NavItem } from './nav-item';
 
 const items = [
@@ -28,7 +27,7 @@ const items = [
     title: 'Screen 1'
   },
   {
-    href: '/products',
+    href: '/screen2',
     icon: (<ShoppingBagIcon fontSize="small" />),
     title: 'Screen 2'
   },
@@ -38,24 +37,9 @@ const items = [
     title: 'Compressor Stats'
   },
   {
-    href: '/settings',
+    href: '/screen3',
     icon: (<CogIcon fontSize="small" />),
     title: 'Settings'
-  },
-  {
-    href: '/login',
-    icon: (<LockIcon fontSize="small" />),
-    title: 'Login'
-  },
-  {
-    href: '/register',
-    icon: (<UserAddIcon fontSize="small" />),
-    title: 'Register'
-  },
-  {
-    href: '/404',
-    icon: (<XCircleIcon fontSize="small" />),
-    title: 'Error'
   }
 ];
 
@@ -90,49 +74,7 @@ export const DashboardSidebar = (props) => {
           height: '100%'
         }}
       >
-        <div>
-          <Box sx={{ p: 3 }}>
-            <NextLink
-              href="/"
-              passHref
-            >
-              <a>
-                <Logo
-                  sx={{
-                    height: 42,
-                    width: 42
-                  }}
-                />
-              </a>
-            </NextLink>
-          </Box>
-          <Box sx={{ px: 2 }}>
-            <Box
-              sx={{
-                alignItems: 'center',
-                backgroundColor: 'rgba(255, 255, 255, 0.04)',
-                cursor: 'pointer',
-                display: 'flex',
-                justifyContent: 'space-between',
-                px: 3,
-                py: '11px',
-                borderRadius: 1
-              }}
-            >
-              <div>
-               
-                
-              </div>
-              <SelectorIcon
-                sx={{
-                  color: 'neutral.500',
-                  width: 14,
-                  height: 14
-                }}
-              />
-            </Box>
-          </Box>
-        </div>
+  
         <Divider
           sx={{
             borderColor: '#2D3748',
