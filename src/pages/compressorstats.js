@@ -1,8 +1,5 @@
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-import { LatestOrders } from '../components/dashboard/latest-orders';
-import { LatestProducts } from '../components/dashboard/latest-products';
-import { Sales } from '../components/dashboard/sales';
 import dynamic  from 'next/dynamic';
 import { DashboardLayout } from '../components/dashboard-layout';
 
@@ -13,12 +10,6 @@ const Plot = dynamic(
 { ssr: false}
 
 )
-
-
-
-
-
-
 const Compressorstats = () => (
   <>
     <Head>
@@ -115,7 +106,7 @@ const Compressorstats = () => (
           >
             */}
           
-            <LatestProducts sx={{ height: '100%' }} />
+           
           </Grid>
           <Grid
             item

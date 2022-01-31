@@ -1,33 +1,12 @@
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-import { Budget } from '../components/dashboard/budget';
-import { LatestOrders } from '../components/dashboard/latest-orders';
 import { LatestProducts } from '../components/dashboard/latest-products';
-import { Sales } from '../components/dashboard/sales';
 import { DashboardLayout } from '../components/dashboard-layout';
-import dynamic from "next/dynamic"
-
-
-
-const Plot = dynamic(
-  () => {
-    return import("react-plotly.js")
-  },
-  { ssr: false}
-  
-  )
-
-
-
-
-
-
-
 const Dashboard = () => (
   <>
     <Head>
       <title>
-        Compressor Stats
+        KPI's and Alerts
       </title>
     </Head>
     <Box
@@ -85,19 +64,11 @@ const Dashboard = () => (
             xl={9}
             xs={12}
           >
-         <Plot
- data={[
-   {
-     x: ['2013-10-04 22:23:00', '2013-11-04 22:23:00', '2013-12-04 22:23:00'],
-     y: [1, 3, 6],
-     type: 'scatter'
-   },
-   {type: 'bar'},
- ]}
- layout={ {width: 750, height: 500, title: 'Compressor Pressure time-series plot '} }
-/>
+      
+      <iframe src="https://dev.fishbonesolutions.co.uk/Stadler_/c52639a&c0-1d9b111961fbc78a55bf60d7b27b0_8897ccfa0a28f76a53a670729fa/" width={700} height={500}></iframe>
           {/* here */} 
-
+    
+          
 
           </Grid>
           <Grid

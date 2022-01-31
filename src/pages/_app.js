@@ -18,7 +18,7 @@ const App = (props) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>
-           Stadler Dashboard Demo UI
+           Fishbone Dashboard 
         </title>
         <meta
           name="viewport"
