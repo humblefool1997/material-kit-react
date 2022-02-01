@@ -39,7 +39,11 @@ const items = [
     href: '/screen3',
     icon: (<CogIcon fontSize="small" />),
     title: 'Settings'
-  }
+  },{
+    href: '/mapintergrate',
+    icon: (<UsersIcon fontSize="small" />),
+    title: 'Map Component'
+  },
 ];
 
 export const DashboardSidebar = (props) => {

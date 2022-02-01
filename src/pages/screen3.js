@@ -7,7 +7,7 @@ const Settings = () => (
   <>
     <Head>
       <title>
-      Maintenance Page
+       Screen 3 
       </title>
     </Head>
     <Box
@@ -22,7 +22,7 @@ const Settings = () => (
           sx={{ mb: 3 }}
           variant="h4"
         >
-          Maintenance
+          Compressor Location Indicator
         </Typography>
         
       </Container>
