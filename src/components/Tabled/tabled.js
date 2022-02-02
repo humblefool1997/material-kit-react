@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { Box, Container } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { DataGrid } from '@mui/x-data-grid';
@@ -51,41 +50,3 @@ const rows = [
   { id: 777008, lastName: 'Frances', firstName: 'Rossini', age: 36 },
   { id: 777009, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
 ];
-const Trains = () => (
-  <>
-    <Head>
-      <title>
-        Trains
-      </title>
-    </Head>
-    <Box
-      component="main"
-      sx={{
-        flexGrow: 1,
-        py: 8
-      }}
-    >
-      <Container maxWidth={false}>
-       
-      <div style={{ height: 700, width: '100%' }}>
-      <DataGrid
-        sx={{ m: 2 }}
-        rows={rows}
-        columns={columns}
-        pageSize={10}
-        rowsPerPageOptions={[5]}
-      
-        disableSelectionOnClick
-      />
-    </div>
-      </Container>
-    </Box>
-  </>
-);
-Trains.getLayout = (page) => (
-  <DashboardLayout>
-    {page}
-  </DashboardLayout>
-);
-
-export default Trains;

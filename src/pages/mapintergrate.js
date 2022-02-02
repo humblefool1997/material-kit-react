@@ -4,7 +4,7 @@ import { LatestProducts } from '../components/dashboard/latest-products';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
-
+const Progressbar = dynamic(() => import('../components/graphs/progressbar'), {ssr: false});
 
 
 const MapIntergrate = () => (
@@ -84,7 +84,6 @@ const MapIntergrate = () => (
             xl={3}
             xs={12}
           >
-           
           
             <LatestProducts sx={{ height: '100%' }} />
           </Grid>

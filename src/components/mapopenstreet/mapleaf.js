@@ -1,18 +1,29 @@
-import {Map, MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
+import { Map, Marker,Overlay } from "pigeon-maps"
 const Mapleaf = () => {
   return (
-    <MapContainer center={[53.4002, -3.0213]} zoom={10} scrollWheelZoom={false} style={{height: 700, width: "100%"}}>
-      <TileLayer
-        attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <Marker position={[53.4002, -3.0213]}>
-        <Popup>
-          Link to Dash
-        </Popup>
-      </Marker>
-    </MapContainer>
+    
+    <Map height={300} defaultCenter={[50.879, 4.6997]} defaultZoom={11}> 
+    <Marker
+    
+    width={50}
+    anchor={[50.879, 4.6997]} 
+    
+    
+    />
+    <Overlay anchor={[50.879, 4.6997]} >
+      <img src='http://localhost:3000/static/images/products/product_2.png' width={20} height={20} alt='' />
+    </Overlay>
+    
+    <Overlay anchor={[50.879, 3.6997]} >
+      <img src='http://localhost:3000/static/images/products/product_2.png' width={20} height={20} alt='' />
+    </Overlay>
+    <Overlay anchor={[50.879, 2.6997]} >
+      <img src='http://localhost:3000/static/images/products/product_2.png' width={20} height={20} alt='' />
+    </Overlay>
+    <Overlay anchor={[50.879, 1.6997]} >
+      <img src='http://localhost:3000/static/images/products/product_2.png' width={20} height={20} alt='' />
+    </Overlay>
+  </Map>
   )
 }
 
