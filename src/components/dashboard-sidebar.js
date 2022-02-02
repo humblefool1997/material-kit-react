@@ -20,30 +20,22 @@ const items = [
     icon: (<ChartBarIcon fontSize="small" />),
     title: 'Dashboard'
   },
-  {
-    href: '/trains',
-    icon: (<UsersIcon fontSize="small" />),
-    title: 'Screen 1'
-  },
+  
   {
     href: '/screen2',
     icon: (<ShoppingBagIcon fontSize="small" />),
-    title: 'Screen 2'
+    title: 'Fleet Overview'
+  },
+  {
+    href: '/screen1',
+    icon: (<UsersIcon fontSize="small" />),
+    title: 'Unit Overview'
   },
   {
     href: '/compressorstats',
     icon: (<UserIcon fontSize="small" />),
     title: 'Compressor Stats'
-  },
-  {
-    href: '/screen3',
-    icon: (<CogIcon fontSize="small" />),
-    title: 'Settings'
-  },{
-    href: '/mapintergrate',
-    icon: (<UsersIcon fontSize="small" />),
-    title: 'Map Component'
-  },
+  }
 ];
 
 export const DashboardSidebar = (props) => {

@@ -1,17 +1,17 @@
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-import { LatestProducts } from '../components/dashboard/latest-products';
+import { Compressortracker} from '../components/dashboard/compressortracker'
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
+import { width } from '@mui/system';
+import { LatestProducts } from '../components/dashboard/latest-products';
+
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
-const Progressbar = dynamic(() => import('../components/graphs/progressbar'), {ssr: false});
-
-
-const MapIntergrate = () => (
+const Screen1 = () => (
   <>
     <Head>
       <title>
-        KPI's and Alerts
+        Unit Overview
       </title>
     </Head>
     <Box
@@ -33,6 +33,31 @@ const MapIntergrate = () => (
             xl={3}
             xs={12}
           >
+          <Compressortracker sx={{ height: '100%' , width: '400%' }} />
+          </Grid>
+          <Grid
+            item
+            lg={8}
+            md={12}
+            xl={9}
+            xs={12}
+          >
+          
+          </Grid>
+          <Grid
+            item
+            xl={3}
+            lg={3}
+            sm={6}
+            xs={12}
+          >
+        <Grid
+            item
+            xl={3}
+            lg={3}
+            sm={6}
+            xs={12}
+          ></Grid>
         
           </Grid>
           <Grid
@@ -42,16 +67,6 @@ const MapIntergrate = () => (
             sm={6}
             xs={12}
           >
-        
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-        
          
           </Grid>
           <Grid
@@ -71,10 +86,11 @@ const MapIntergrate = () => (
             xs={12}
           >
       
-     
+      <Mapleaf sx={{ height: '100%' }} />
+
           {/* here */} 
     
-          <Mapleaf sx={{ height: '100%' }} />
+          
 
           </Grid>
           <Grid
@@ -85,7 +101,7 @@ const MapIntergrate = () => (
             xs={12}
           >
           
-            <LatestProducts sx={{ height: '100%' }} />
+  <LatestProducts sx={{ height: '100%' }} />
           </Grid>
           <Grid
             item
@@ -103,10 +119,10 @@ const MapIntergrate = () => (
 );
 
 
-MapIntergrate.getLayout = (page) => (
+Screen1.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
 );
 
-export default MapIntergrate;
+export default Screen1;
