@@ -4,6 +4,12 @@ import { LatestProducts } from '../components/dashboard/latest-products';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
+const Plot = dynamic(
+  () => {
+    return import("react-plotly.js")
+  },
+  { ssr: false}
+);  
 const Dashboard = () => (
   <>
     <Head>
@@ -71,7 +77,7 @@ const Dashboard = () => (
 
           {/* here */} 
     
-          
+        
 
           </Grid>
           <Grid
@@ -95,6 +101,23 @@ const Dashboard = () => (
           
             <LatestProducts sx={{ height: '100%' }} />
           </Grid>
+          <Plot
+ data={[
+   {
+    values: [9,2,1],
+    labels: ['Green', 'Amber', 'Red' ],
+    domain: {column: 0},
+    
+    hoverinfo: 'label+percent+name',
+    hole: .4,
+    type: 'pie',
+    
+
+   }
+   
+ ]}
+ layout={ {width: 750, height: 500, title: 'Fleet Health'} }
+/>
           <Grid
             item
             lg={8}

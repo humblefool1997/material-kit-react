@@ -52,7 +52,7 @@ const columns= [
   {
     field: 'health',
     headerName: 'Health (%)',
-    width: 120,
+    width: 100,
     headerClassName: 'super-app-theme--header',
     headerAlign: 'center',
     
@@ -60,6 +60,15 @@ const columns= [
   {
     field: 'dutycycle',
     headerName: 'Duty Cycle (%)',
+    width: 100,
+    type: 'number',
+    headerClassName: 'super-app-theme--header',
+    headerAlign: 'center',
+   
+  },
+  {
+    field: 'operatinghours',
+    headerName: 'Operating Hours (hrs)',
     width: 150,
     type: 'number',
     headerClassName: 'super-app-theme--header',
@@ -70,18 +79,29 @@ const columns= [
 ];
 
 const rows = [
-  { id: 777001,  status: 'green', fc_a_b: 'A', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89', },
-  { id: 777002,  status: 'green', fc_a_b: 'B', location: 'Formby', health: 25, dutycycle: '89' },
-  { id: 777003,  status: 'green', fc_a_b: 'B', location: 'Sefton', health: 25, dutycycle: '89' },
-  { id: 777004,  status: 'green', fc_a_b: 'B', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89' },
-  { id: 777005,  status: 'green', fc_a_b: 'A', location: 'Formby', health: 25, dutycycle: '89' },
-  { id: 777006,  status: 'green', fc_a_b: 'A', location: 'Cheshire', health: 25, dutycycle: '89' },
-  { id: 777007,  status: 'green', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89' },
-  { id: 777008,  status: 'green', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89' },
-  { id: 777012,  status: 'red',   fc_a_b: 'A', location: 'Wallasey, Wirral', health: 25, dutycycle: '89' },
-  { id: 777010,  status: 'amber', fc_a_b: 'A', location: 'Hale, Halton', health: 25, dutycycle: '89' },
-  { id: 777011,  status: 'amber', fc_a_b: 'A', location: 'Kirkdale Depot', health: 25, dutycycle: '89' },
-  { id: 777012,  status: 'green', fc_a_b: 'A', location: 'Kirkdale Depot', health: 25, dutycycle: '89' },
+  { id: 777001,  status: 'green', fc_a_b: 'A', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89', 
+  operatinghours: '3500' },
+  { id: 777002,  status: 'green', fc_a_b: 'B', location: 'Formby', health: 25, dutycycle: '89',
+  operatinghours: '4600'
+},
+  { id: 777003,  status: 'green', fc_a_b: 'B', location: 'Sefton', health: 25, dutycycle: '89',
+  operatinghours: '1100'
+},
+  { id: 777004,  status: 'green',fc_a_b: 'B', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89',
+  operatinghours: '1500'
+},
+{ id: 777005,  status: 'green',fc_a_b: 'A', location: 'Formby', health: 25, dutycycle: '89',
+  operatinghours: '1500'
+},
+  { id: 777006,  status: 'green', fc_a_b: 'A', location: 'Cheshire', health: 25, dutycycle: '89',
+  operatinghours: '1500' 
+},
+  { id: 777007,  status: 'green', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89',operatinghours: '1500' },
+  { id: 777008,  status: 'green', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89',operatinghours: '1500' },
+  { id: 777012,  status: 'red',   fc_a_b: 'A', location: 'Wallasey, Wirral', health: 25, dutycycle: '89',operatinghours: '1500' },
+  { id: 777010,  status: 'amber', fc_a_b: 'A', location: 'Hale, Halton', health: 25, dutycycle: '89',operatinghours: '1500' },
+  { id: 777011,  status: 'amber', fc_a_b: 'A', location: 'Kirkdale Depot', health: 25, dutycycle: '89',operatinghours: '1500' },
+  { id: 777012,  status: 'green', fc_a_b: 'A', location: 'Kirkdale Depot', health: 25, dutycycle: '89',operatinghours: '1500' },
 
  
 ];
