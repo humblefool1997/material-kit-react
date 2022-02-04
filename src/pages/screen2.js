@@ -2,7 +2,16 @@ import Head from 'next/head';
 import { Box, Container } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { DataGrid } from '@mui/x-data-grid';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
+
+  import {
+    Button,
+    ButtonGroup,
+    Intent,
+    Slider,
+    KeyCombo
+  } from "@blueprintjs/core";
+
 
 const columns= [
   {
@@ -14,14 +23,9 @@ const columns= [
     type: 'number',
     renderCell: (params) => (
       <strong>
-        <Button
-          variant="contained"
-          color="secondary"
-          size="small"
-          style={{ marginLeft: 16 }}
-        >
-          Green
-        </Button>
+       
+        <Button intent={Intent.DANGER} text="Danger" />
+    
       </strong>
     ),
   },

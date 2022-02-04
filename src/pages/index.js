@@ -3,6 +3,7 @@ import { Box, Container, Grid } from '@mui/material';
 import { LatestProducts } from '../components/dashboard/latest-products';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
+import Fleethealth from 'src/components/graphs/fleethealth';
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
 const Plot = dynamic(
   () => {
@@ -101,23 +102,7 @@ const Dashboard = () => (
           
             <LatestProducts sx={{ height: '100%' }} />
           </Grid>
-          <Plot
- data={[
-   {
-    values: [9,2,1],
-    labels: ['Green', 'Amber', 'Red' ],
-    domain: {column: 0},
-    
-    hoverinfo: 'label+percent+name',
-    hole: .4,
-    type: 'pie',
-    
-
-   }
-   
- ]}
- layout={ {width: 750, height: 500, title: 'Fleet Health'} }
-/>
+  
           <Grid
             item
             lg={8}
@@ -125,11 +110,13 @@ const Dashboard = () => (
             xl={9}
             xs={12}
           >
-          
+          <h1>Fleet Overview</h1>
+          <Fleethealth />
           </Grid>
         </Grid>
       </Container>
     </Box>
+
   </>
 );
 

@@ -1,8 +1,6 @@
 import { Map, Marker,Overlay } from "pigeon-maps"
 import { useRouter } from 'next/router'
 
-
-
 const Mapleaf = () => {
   return (
     

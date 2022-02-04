@@ -3,9 +3,7 @@ import { Box, Container, Grid } from '@mui/material';
 import { Compressortracker} from '../components/dashboard/compressortracker'
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
-import { width } from '@mui/system';
 import { LatestProducts } from '../components/dashboard/latest-products';
-
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
 const Screen1 = () => (
   <>
