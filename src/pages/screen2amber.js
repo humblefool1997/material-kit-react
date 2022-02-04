@@ -16,7 +16,7 @@ const columns= [
     width: 150,
     type: 'number',
     renderCell: (params) => (
-      <Button variant="contained" color="success"> Green </Button>
+      <Button variant="contained" color="primary"> Amber </Button>
     ),
   },
   { field: 'id', 
@@ -73,33 +73,17 @@ const columns= [
 ];
 
 const rows = [
-  { id: 777001,  status: 'green', fc_a_b: 'A', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89', 
+  { id: 777001,  status: 'amber', fc_a_b: 'A', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89', 
   operatinghours: '3500' },
-  { id: 777002,  status: 'green', fc_a_b: 'B', location: 'Formby', health: 25, dutycycle: '89',
+  { id: 777002,  status: 'amber', fc_a_b: 'B', location: 'Formby', health: 25, dutycycle: '89',
   operatinghours: '4600'
 },
-  { id: 777003,  status: 'green', fc_a_b: 'B', location: 'Sefton', health: 25, dutycycle: '89',
-  operatinghours: '1100'
-},
-  { id: 777004,  status: 'green',fc_a_b: 'B', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89',
-  operatinghours: '1500'
-},
-{ id: 777005,  status: 'green',fc_a_b: 'A', location: 'Formby', health: 25, dutycycle: '89',
-  operatinghours: '1500'
-},
-  { id: 777006,  status: 'green', fc_a_b: 'A', location: 'Cheshire', health: 25, dutycycle: '89',
-  operatinghours: '1500' 
-},
-  { id: 777007,  status: 'green', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777008,  status: 'green', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777012,  status: 'red',   fc_a_b: 'A', location: 'Wallasey, Wirral', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777010,  status: 'amber', fc_a_b: 'A', location: 'Hale, Halton', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777011,  status: 'amber', fc_a_b: 'A', location: 'Kirkdale Depot', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777012,  status: 'green', fc_a_b: 'A', location: 'Kirkdale Depot', health: 25, dutycycle: '89',operatinghours: '1500' },
+  { id: 777003,  status: 'amber', fc_a_b: 'B', location: 'Sefton', health: 25, dutycycle: '89',
+  operatinghours: '1100'}
 
  
 ];
-const Screen2 = () => (
+const Screen2amber = () => (
   <>
     <Head>
       <title>
@@ -136,6 +120,8 @@ const Screen2 = () => (
         },
       }}
     >
+     
+    
 <DataGrid
         sx={{ m: 2 }}
         rows={rows}
@@ -151,10 +137,10 @@ const Screen2 = () => (
     </Box>
   </>
 );
-Screen2.getLayout = (page) => (
+Screen2amber.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
 );
 
-export default Screen2;
+export default Screen2amber;
