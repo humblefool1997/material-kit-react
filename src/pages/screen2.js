@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Box, Container } from '@mui/material';
+import { Box, Container, Link } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { DataGrid } from '@mui/x-data-grid';
 import Button from '@mui/material/Button';
@@ -114,7 +114,9 @@ const Screen2 = () => (
       }}
     >
       <Container maxWidth={false}>
-       
+        <Link href='/'>
+       <Button >Dashboard Overview</Button>
+       </Link>
       <div style={{ height: 700, width: '100%' }}>
       <Box
       sx={{

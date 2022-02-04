@@ -1,5 +1,7 @@
 import { formatDistanceToNow, subHours } from 'date-fns';
 import { v4 as uuid } from 'uuid';
+import Link from 'next/link'
+
 import {
   Box,
   Button,
@@ -72,8 +74,9 @@ export const LatestProducts = (props) => (
           <IconButton
             edge="end"
             size="small"
-          >
+          > <Link href='/screen2'>
             <MoreVertIcon />
+            </Link>
           </IconButton>
         </ListItem>
       ))}

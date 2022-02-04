@@ -1,17 +1,22 @@
 import { Map, Marker,Overlay } from "pigeon-maps"
 import { useRouter } from 'next/router'
+import Link from 'next/link'
+
+function handleclick(e) {
+  console.log('You clicked submit.');
+}
+
 
 const Mapleaf = () => {
+  
   return (
+    
     
     <Map height={600} defaultCenter={[53.437389, -2.98517]} defaultZoom={11}> 
     <Overlay anchor={[53.437389, -2.98517]} >
    <img src='https://raw.githubusercontent.com/humblefool1997/CDN_ASSETS/main/stadler_red.png' width={20} height={20} alt='' />
-   <Marker 
-        width={50}
-        anchor={[50.879, 4.6997]} 
-        onClick={() => alert("Hello")} 
-      />
+  
+   
     </Overlay>
    
 
@@ -21,7 +26,9 @@ const Mapleaf = () => {
     </Overlay>
     
     <Overlay anchor={[53.43753815, -2.9856801]} >
+    <Link href="/screen2">
     <img src='https://raw.githubusercontent.com/humblefool1997/CDN_ASSETS/main/stadler_amber.png' width={20} height={20} alt='' />
+    </Link>
   </Overlay>
   <Overlay anchor={[53.5800705 , -3.0656900]} >
    <img src='https://raw.githubusercontent.com/humblefool1997/CDN_ASSETS/main/stadler_red.png' width={20} height={20} alt='' />
