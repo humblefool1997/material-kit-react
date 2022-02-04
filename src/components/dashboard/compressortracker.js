@@ -5,6 +5,11 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import Link from 'next/link';
+import { ImageLoader } from './ImageLoader';
+import LinearProgress from '@mui/material/LinearProgress';
+import Stack from '@mui/material/Stack';
+
 import {
   Box,
   Button,
@@ -64,41 +69,27 @@ export const Compressortracker = (props) => (
           label="uno"
           
         >
-          <MenuItem value={10}>12</MenuItem>
-          <MenuItem value={20}>23</MenuItem>
-          <MenuItem value={30}>23</MenuItem>
+          <Link href='/'>
+          <MenuItem value={10}>01</MenuItem>
+          </Link>
+          <MenuItem value={20}>03</MenuItem>
+          <MenuItem value={30}>12</MenuItem>
         </Select>
       </FormControl>
     </Box>
     <List>
-      {products.map((product, i) => (
-        <ListItem
-          divider={i < products.length - 1}
-          key={product.id}
-        >
-          <ListItemAvatar>
-            <img
-              alt={product.name}
-              src={product.imageUrl}
-              style={{
-                height: 48,
-                width: 48
-              }}
-            />
-          </ListItemAvatar>
-          <ListItemText
-            primary={product.name}
-            secondary={`Updated ${formatDistanceToNow(product.updatedAt)}`}
-          />
-          <IconButton
-            edge="end"
-            size="small"
-          >
-            <MoreVertIcon />
-          </IconButton>
-        </ListItem>
-      ))}
+    <ImageLoader/>
     </List>
+    
+    <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
+       <LinearProgress color="success" />
+      <Button>Compressor A Health 95%</Button>
+     
+    </Stack>
+    <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
+      <LinearProgress color="success" />
+      <Button>Compressor B Health 90%</Button>
+    </Stack>
     <Divider />
     <Box
       sx={{

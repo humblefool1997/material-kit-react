@@ -40,7 +40,7 @@ const Screen1 = () => (
             xl={9}
             xs={12}
           >
-          
+       
           </Grid>
           <Grid
             item
