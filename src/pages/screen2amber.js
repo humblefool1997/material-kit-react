@@ -3,9 +3,18 @@ import { Box, Container, Link } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { DataGrid } from '@mui/x-data-grid';
 import Button from '@mui/material/Button';
+import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import { yellow } from '@mui/material/colors';
 
+const CustomButton = styled(Button)(({ theme }) => ({
+    color: theme.status.danger,
+  }));
 
-
+const theme = createTheme({
+    status: {
+      danger: yellow[700],
+    },
+  });
 
 const columns= [
   {
@@ -16,7 +25,9 @@ const columns= [
     width: 150,
     type: 'number',
     renderCell: (params) => (
-      <Button variant="contained" color="primary"> Amber </Button>
+    <ThemeProvider theme={theme}>
+    <Button variant="contained" color="warning"> Amber </Button>
+    </ThemeProvider>
     ),
   },
   { field: 'id', 

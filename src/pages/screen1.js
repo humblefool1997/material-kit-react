@@ -84,7 +84,7 @@ const Screen1 = () => (
             xs={12}
           >
       
-      <Mapleaf sx={{ height: '100%' }} />
+      <Mapleaf lat={53.08068085} longs={-2.42459011} sx={{ height: '100%' }} />
 
           {/* here */} 
     

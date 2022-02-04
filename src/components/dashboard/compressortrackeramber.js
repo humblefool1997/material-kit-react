@@ -23,7 +23,6 @@ import {
   ListItemText
 } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const products = [
   {
@@ -52,7 +51,7 @@ const products = [
   }
 ];
 
-export const Compressortracker = (props) => (
+export const Compressortrackeramber = (props) => (
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}
@@ -69,8 +68,7 @@ export const Compressortracker = (props) => (
           label="uno"
           
         >
-         
-         <Link href='/screen1'>
+          <Link href='/screen1'>
           <MenuItem value={10}>01</MenuItem>
           </Link>
           <Link href='/screen1amber'>
@@ -81,20 +79,20 @@ export const Compressortracker = (props) => (
           </Link>
         </Select>
       </FormControl>
-      <Button>Unit No: 777001</Button>
+      <Button>Unit No: 777003</Button>
     </Box>
     <List>
     <ImageLoader/>
     </List>
     
     <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-       <LinearProgress color="success" />
-      <Button>Compressor A Health 95%</Button>
+       <LinearProgress color="warning" />
+      <Button>Compressor A Health 65%</Button>
      
     </Stack>
     <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-      <LinearProgress color="success" />
-      <Button>Compressor B Health 90%</Button>
+      <LinearProgress color="warning" />
+      <Button>Compressor B Health 60%</Button>
     </Stack>
     <Divider />
     <Box

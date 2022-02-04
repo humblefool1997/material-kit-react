@@ -1,21 +1,15 @@
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-import { LatestProducts } from '../components/dashboard/latest-products';
+import  {Compressortrackeramber} from '../components/dashboard/compressortrackeramber';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
-import Fleethealth from 'src/components/graphs/fleethealth';
+import { LatestProducts } from '../components/dashboard/latest-products';
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
-const Plot = dynamic(
-  () => {
-    return import("react-plotly.js")
-  },
-  { ssr: false}
-);  
-const Dashboard = () => (
+const Screen1amber = () => (
   <>
     <Head>
       <title>
-        KPI's and Alerts
+        Unit Overview
       </title>
     </Head>
     <Box
@@ -37,7 +31,16 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-         
+          <Compressortrackeramber sx={{ height: '100%' , width: '400%' }} />
+          </Grid>
+          <Grid
+            item
+            lg={8}
+            md={12}
+            xl={9}
+            xs={12}
+          >
+       
           </Grid>
           <Grid
             item
@@ -46,6 +49,13 @@ const Dashboard = () => (
             sm={6}
             xs={12}
           >
+        <Grid
+            item
+            xl={3}
+            lg={3}
+            sm={6}
+            xs={12}
+          ></Grid>
         
           </Grid>
           <Grid
@@ -74,11 +84,11 @@ const Dashboard = () => (
             xs={12}
           >
       
-      <Mapleaf lat={53.437389} longs={-2.98517}  sx={{ height: '100%' }} />
+      <Mapleaf lat={53.55369949} longs={-3.07075} sx={{ height: '100%' }} />
 
           {/* here */} 
     
-        
+          
 
           </Grid>
           <Grid
@@ -88,21 +98,9 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            {/*
-            <TrafficByDevice sx={{ height: '100%' }} />
-          </Grid>
-          <Grid
-            item
-            lg={4}
-            md={6}
-            xl={3}
-            xs={12}
-          >
-            */}
           
-            <LatestProducts sx={{ height: '100%' }} />
+  <LatestProducts sx={{ height: '100%' }} />
           </Grid>
-  
           <Grid
             item
             lg={8}
@@ -110,21 +108,19 @@ const Dashboard = () => (
             xl={9}
             xs={12}
           >
-          <h1>Fleet Overview</h1>
-          <Fleethealth />
+          
           </Grid>
         </Grid>
       </Container>
     </Box>
-
   </>
 );
 
 
-Dashboard.getLayout = (page) => (
+Screen1amber.getLayout = (page) => (
   <DashboardLayout>
     {page}
   </DashboardLayout>
 );
 
-export default Dashboard;
+export default Screen1amber;

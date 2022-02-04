@@ -1,18 +1,15 @@
-import { Map, Marker,Overlay } from "pigeon-maps"
+import { Map,Overlay } from "pigeon-maps"
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-function handleclick(e) {
-  console.log('You clicked submit.');
-}
 
 
-const Mapleaf = () => {
+const Mapleaf = (props) => {
   
   return (
     
-    
-    <Map height={600} defaultCenter={[53.437389, -2.98517]} defaultZoom={11}> 
+    //53.437389, -2.98517
+    <Map height={600} defaultCenter={[props.lat,props.longs]} defaultZoom={11}> 
     <Overlay anchor={[53.437389, -2.98517]} >
    <img src='https://raw.githubusercontent.com/humblefool1997/CDN_ASSETS/main/stadler_red.png' width={20} height={20} alt='' />
   

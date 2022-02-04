@@ -16,7 +16,7 @@ const columns= [
     width: 150,
     type: 'number',
     renderCell: (params) => (
-      <Button variant="contained" color="primary"> Red </Button>
+      <Button variant="contained" color="error"> Red </Button>
     ),
   },
   { field: 'id', 
