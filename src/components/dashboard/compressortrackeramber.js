@@ -87,11 +87,11 @@ export const Compressortrackeramber = (props) => (
     
     <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
        <LinearProgress color="warning" />
-      <Button>Compressor A Health 65%</Button>
+      <Button>Compressor A Health 35%</Button>
      
     </Stack>
     <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-      <LinearProgress color="warning" />
+      <LinearProgress color="success" />
       <Button>Compressor B Health 60%</Button>
     </Stack>
     <Divider />
