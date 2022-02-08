@@ -38,7 +38,7 @@ const products = [
   }
 ];
 
-export const LatestProducts = (props) => (
+export const Summary = (props) => (
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}
@@ -76,13 +76,7 @@ export const LatestProducts = (props) => (
       ))}
     </List>
     <Divider />
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        p: 2
-      }}
-    >
+  
       <Button
         color="primary"
         endIcon={<ArrowRightIcon />}
@@ -92,6 +86,6 @@ export const LatestProducts = (props) => (
       Last updated since 1 day
       
       </Button>
-    </Box>
+  
   </Card>
 );

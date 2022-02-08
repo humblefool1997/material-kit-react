@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import * as React from 'react';
 import { Box, Container, Grid } from '@mui/material';
-import { LatestProducts } from '../components/dashboard/latest-products';
+import { Summary } from '../components/dashboard/latest-products';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
 import Fleethealth from 'src/components/graphs/fleethealth';
@@ -77,10 +77,7 @@ const Dashboard = () => (
             xs={12}
           >
       
-      <Mapleaf lat={53.437389} longs={-2.98517}  sx={{ height: '100%' }} />
-
-          {/* here */} 
-    
+      <Mapleaf lat={53.437389} longs={-2.98517}  sx={{ height: '100%' }} />    
         
 
           </Grid>
@@ -91,19 +88,8 @@ const Dashboard = () => (
             xl={3}
             xs={12}
           >
-            {/*
-            <TrafficByDevice sx={{ height: '100%' }} />
-          </Grid>
-          <Grid
-            item
-            lg={4}
-            md={6}
-            xl={3}
-            xs={12}
-          >
-            */}
           
-            <LatestProducts sx={{ height: '100%' }} />
+            <Summary sx={{ height: '100%' }} />
           </Grid>
   
           <Grid
@@ -122,7 +108,7 @@ const Dashboard = () => (
           > <h1>Fleet Health</h1></Grid>
            
          
-          <Fleethealth />
+        <Fleethealth />
        
         <Stack direction="row" spacing={2}>
         <Trend trend="Week " />
