@@ -189,14 +189,7 @@ const Screen2 = () => (
         rowsPerPageOptions={[10]}
       disableSelectionOnClick
      
-      sx={{
-        boxShadow: 2,
-        border: 2,
-        borderColor: 'primary.light',
-        '& .MuiDataGrid-cell:hover': {
-          color: 'primary.main',
-        },
-      }}
+      
         />
        
     </Box>
