@@ -1,7 +1,7 @@
 import { formatDistanceToNow, subHours } from 'date-fns';
 import { v4 as uuid } from 'uuid';
 import Link from 'next/link'
-
+import dynamic from  'next/dynamic'
 import {
   Box,
   Button,
@@ -14,8 +14,10 @@ import {
   ListItemAvatar,
   ListItemText
 } from '@mui/material';
+
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+const TrendGraph = dynamic(() => import('../trends/TrendTable'), { ssr: false });
 
 const products = [
   {
@@ -38,7 +40,22 @@ const products = [
   }
 ];
 
+const handleClickOpen = () => {
+  setOpen(true);
+};
+
+const handleClose = () => {
+  setOpen(false);
+};
+
+
 export const Summary = (props) => (
+  
+
+  
+
+
+
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}
@@ -52,26 +69,26 @@ export const Summary = (props) => (
           key={product.id}
         >
           <ListItemAvatar>
+            <div>
             <img
               alt={product.name}
               src={product.imageUrl}
               style={{
                 height: 40,
                 width: 40
-              }}
+              }
+            
+            }
+            onClick={() => handleClickOpen()} 
             />
+            </div>
           </ListItemAvatar>
           <ListItemText
             primary={product.name}
             secondary={`Updated ${formatDistanceToNow(product.updatedAt)}`}
           />
-          <IconButton
-            edge="end"
-            size="small"
-          > <Link href='/screen2'>
-            <MoreVertIcon />
-            </Link>
-          </IconButton>
+         
+          <TrendGraph trend=".." />
         </ListItem>
       ))}
     </List>
@@ -88,4 +105,5 @@ export const Summary = (props) => (
       </Button>
   
   </Card>
+  
 );

@@ -24,9 +24,6 @@ const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { s
   
 >
 
- 
-
-          
 </Grid>
 <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
@@ -46,9 +43,6 @@ const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { s
         <TrendGraph trend="Year " />
        
       </Stack>
-        </Grid>
-        <Grid item xs>
-        
         </Grid>
   </Grid>
   </Box>
