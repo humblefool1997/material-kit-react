@@ -23,6 +23,7 @@ import {
   ListItemText
 } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 const products = [
   {
@@ -52,52 +53,60 @@ const products = [
 ];
 
 export const Compressortrackerred = (props) => (
-  
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}
-      title=" Compressor Health Tracker "
+      title=" Unit Overview "
     />
     <Divider />
-    <Link href='/'>
-       <Button >Dashboard Overview</Button>
-       </Link>
-    <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
+
+    <Stack direction="row" spacing={70} >
+    <Button fullWidth >Unit No:777012</Button>
+    <FormControl fullWidth  >
         <InputLabel id="demo-simple-select-label">Unit Number</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-         
-          label="uno"
-          
+         label="uno"
         >
-          <Link href='/screen1'>
-          <MenuItem value={10}>01</MenuItem>
+         
+         <Link href='/screen1'>
+          <MenuItem value={10}>777001</MenuItem>
           </Link>
           <Link href='/screen1amber'>
-          <MenuItem value={20}>03</MenuItem>
+          <MenuItem value={20}>777003</MenuItem>
           </Link>
           <Link href='/screen1red'>
-          <MenuItem value={30}>12</MenuItem>
+          <MenuItem value={30}>777012</MenuItem>
           </Link>
         </Select>
       </FormControl>
-      <Button>Unit No: 777012</Button>
+
+   </Stack>
+    <Box sx={{ minWidth: 100 }}>
+     
     </Box>
+    
     <List>
     <ImageLoader/>
     </List>
+
+    <Stack direction="row" spacing={50}>
     
     <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-       <LinearProgress color="error" />
-      <Button>Compressor A Health 35%</Button>
-     
-    </Stack>
-    <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-      <LinearProgress color="error" />
+       <LinearProgress variant='determinate' color="error" value="30" />
       <Button>Compressor B Health 30%</Button>
+     </Stack>
+     
+     
+    <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
+      <LinearProgress  variant="determinate" color="error" value="20" />
+      <Button>Compressor A Health 20%</Button>
     </Stack>
+    
+    </Stack>
+    
+  
     <Divider />
     <Box
       sx={{

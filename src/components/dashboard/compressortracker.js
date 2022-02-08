@@ -59,43 +59,53 @@ export const Compressortracker = (props) => (
       title=" Unit Overview "
     />
     <Divider />
-    <Box sx={{ minWidth: 120 }}>
-      <FormControl fullWidth>
+
+    <Stack direction="row" spacing={70} >
+    <Button fullWidth >Unit No:777001</Button>
+    <FormControl fullWidth  >
         <InputLabel id="demo-simple-select-label">Unit Number</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-         
-          label="uno"
-          
+         label="uno"
         >
          
          <Link href='/screen1'>
-          <MenuItem value={10}>01</MenuItem>
+          <MenuItem value={10}>777001</MenuItem>
           </Link>
           <Link href='/screen1amber'>
-          <MenuItem value={20}>03</MenuItem>
+          <MenuItem value={20}>777003</MenuItem>
           </Link>
           <Link href='/screen1red'>
-          <MenuItem value={30}>12</MenuItem>
+          <MenuItem value={30}>777012</MenuItem>
           </Link>
         </Select>
       </FormControl>
-      <Button>Unit No: 777001</Button>
+
+   </Stack>
+    <Box sx={{ minWidth: 100 }}>
+     
     </Box>
+    
     <List>
     <ImageLoader/>
     </List>
+
+    <Stack direction="row" spacing={50}>
     
     <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-       <LinearProgress color="success" />
-      <Button>Compressor A Health 90%</Button>
+       <LinearProgress variant='determinate' color="success" value="80" />
+      <Button>Compressor B Health 80%</Button>
+     </Stack>
      
-    </Stack>
+     
     <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-      <LinearProgress color="success" />
-      <Button>Compressor B Health 90%</Button>
+      <LinearProgress  variant="determinate" color="success" value="90" />
+      <Button>Compressor A Health 90%</Button>
     </Stack>
+    
+    </Stack>
+    
   
     <Divider />
     <Box
