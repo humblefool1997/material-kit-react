@@ -99,7 +99,7 @@ const Screen1 = () => (
             xs={12}
           >
           
-  <LatestProducts sx={{ height: '100%' }} />
+ {/* <LatestProducts sx={{ height: '100%' }} /> */}
           </Grid>
           <Grid
             item
