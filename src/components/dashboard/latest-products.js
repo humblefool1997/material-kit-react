@@ -94,16 +94,7 @@ export const Summary = (props) => (
     </List>
     <Divider />
   
-      <Button
-        color="primary"
-        endIcon={<ArrowRightIcon />}
-        size="small"
-        variant="text"
-      >
-      Last updated since 1 day
-      
-      </Button>
-  
+     
   </Card>
   
 );

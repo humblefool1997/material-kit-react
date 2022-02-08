@@ -115,15 +115,7 @@ export const Compressortrackeramber = (props) => (
         p: 2
       }}
     >
-      <Button
-        color="primary"
-        endIcon={<ArrowRightIcon />}
-        size="small"
-        variant="text"
-      >
-      Last updated since 1 day
-      
-      </Button>
+     
     </Box>
     
   </Card>
