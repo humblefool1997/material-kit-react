@@ -3,11 +3,56 @@ import { Box, Container, Link } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { DataGrid } from '@mui/x-data-grid';
 import Button from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+const StyledDataGrid = styled(DataGrid)(({ theme }) => ({
+  border: 0,
+  color:
+    theme.palette.mode === 'light' ? 'rgba(0,0,0,.85)' : 'rgba(255,255,255,0.85)',
+  fontFamily: [
+    '-apple-system',
+    'BlinkMacSystemFont',
+    '"Segoe UI"',
+    'Roboto',
+    '"Helvetica Neue"',
+    'Arial',
+    'sans-serif',
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(','),
+  WebkitFontSmoothing: 'auto',
+  letterSpacing: 'normal',
+  '& .MuiDataGrid-columnsContainer': {
+    backgroundColor: theme.palette.mode === 'light' ? '#fafafa' : '#1d1d1d',
+  },
+  '& .MuiDataGrid-iconSeparator': {
+    display: 'none',
+  },
+  '& .MuiDataGrid-columnHeader, .MuiDataGrid-cell': {
+    borderRight: `1px solid ${
+      theme.palette.mode === 'light' ? '#f0f0f0' : '#303030'
+    }`,
+  },
+  '& .MuiDataGrid-columnsContainer, .MuiDataGrid-cell': {
+    borderBottom: `1px solid ${
+      theme.palette.mode === 'light' ? '#f0f0f0' : '#303030'
+    }`,
+  },
+  '& .MuiDataGrid-cell': {
+    color:
+      theme.palette.mode === 'light' ? 'rgba(0,0,0,.85)' : 'rgba(255,255,255,0.65)',
+  },
+  '& .MuiPaginationItem-root': {
+    borderRadius: 0,
+  },
+  
+}));
 const columns = [
  
   {
     field: 'status',
     headerName: 'Status',
+    columnHeaderTitle: 'Status',
     headerClassName: 'super-app-theme--header',
     headerAlign: 'left',
     width: 100,
@@ -129,18 +174,31 @@ const Screen2 = () => (
         height: 700,
         width: 1,
         '& .super-app-theme--header': {
-          backgroundColor: '#81D4FA',
+          backgroundColor: '#D3D3D3',
         },
+        
       }}
     >
-    <DataGrid
+  
+       <StyledDataGrid
+        
         sx={{ m: 3 }}
         rows={rows}
         columns={columns}
         pageSize={12 }
         rowsPerPageOptions={[10]}
       disableSelectionOnClick
-      />
+     
+      sx={{
+        boxShadow: 2,
+        border: 2,
+        borderColor: 'primary.light',
+        '& .MuiDataGrid-cell:hover': {
+          color: 'primary.main',
+        },
+      }}
+        />
+       
     </Box>
       
     </div>
