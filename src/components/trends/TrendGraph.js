@@ -13,7 +13,7 @@ const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="down" ref={ref} {...props} />;
 });
 
-const trend = (props) => {
+const TrendGraph = (props) => {
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -61,4 +61,4 @@ const trend = (props) => {
 
 };
 
-export default trend;
+export default TrendGraph;

@@ -6,7 +6,7 @@ import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
 import Fleethealth from 'src/components/graphs/fleethealth';
 import Stack from '@mui/material/Stack';
-const Trend = dynamic(() => import('../components/trends/trend'), { ssr: false });
+const TrendGraph = dynamic(() => import('../components/trends/TrendGraph'), { ssr: false });
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
 const Plot = dynamic(
   () => {
@@ -111,9 +111,9 @@ const Dashboard = () => (
         <Fleethealth />
        
         <Stack direction="row" spacing={2}>
-        <Trend trend="Week " />
-        <Trend trend="Month " />
-        <Trend trend="Year " />
+        <TrendGraph trend="Week " />
+        <TrendGraph trend="Month " />
+        <TrendGraph trend="Year " />
        
       </Stack>
           
