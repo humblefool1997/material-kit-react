@@ -1,9 +1,12 @@
 import Head from 'next/head';
+import * as React from 'react';
 import { Box, Container, Grid } from '@mui/material';
 import { LatestProducts } from '../components/dashboard/latest-products';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
 import Fleethealth from 'src/components/graphs/fleethealth';
+import Stack from '@mui/material/Stack';
+const Trend = dynamic(() => import('../components/trends/trend'), { ssr: false });
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
 const Plot = dynamic(
   () => {
@@ -110,8 +113,25 @@ const Dashboard = () => (
             xl={9}
             xs={12}
           >
-          <h1>Fleet Overview</h1>
+          <Grid
+            item
+            lg={4}
+            md={6}
+            xl={3}
+            xs={12}
+          > <h1>Fleet Health</h1></Grid>
+           
+         
           <Fleethealth />
+       
+        <Stack direction="row" spacing={2}>
+        <Trend trend="Week " />
+        <Trend trend="Month " />
+        <Trend trend="Year " />
+       
+      </Stack>
+          
+          
           </Grid>
         </Grid>
       </Container>

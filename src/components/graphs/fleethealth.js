@@ -5,7 +5,7 @@ const Fleethealth = () =>{
     return <DonutChart
      data={[
        {
-         label: 'Red Fleet',
+         label: 'Red',
          value: 1,
        },
        {
@@ -23,7 +23,15 @@ const Fleethealth = () =>{
         '#D2222D',
         '#FFBF00',
         '#238823'
-    ]}
+    ]
+   
+  
+  }
+  innerRadius	= '0.50'
+  outerRadius = '0.90'
+  clickToggle = 'false'
+  emptyColor = 'false'
+  legend = "true"
 
    />;
 }

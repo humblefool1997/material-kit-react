@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
-import { AppBar, Avatar, Badge, Box, IconButton, Toolbar, Tooltip } from '@mui/material';
+import { AppBar, IconButton, Toolbar, Tooltip } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';  
 import Logo from "./logo.svg"
 const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({

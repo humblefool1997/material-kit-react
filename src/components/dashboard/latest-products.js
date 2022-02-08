@@ -20,27 +20,21 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 const products = [
   {
     id: uuid(),
-    name: 'Baseline Alerts',
-    imageUrl: '/static/images/products/product_3.png',
+    name: '1',
+    imageUrl: '/static/Icons/stadler_red.png',
     updatedAt: subHours(Date.now(), 2)
   },
   {
     id: uuid(),
-    name: 'Warning Threshold Alerts',
-    imageUrl: '/static/images/products/product_2.png',
+    name: '2',
+    imageUrl: '/static/Icons/stadler_amber.png',
     updatedAt: subHours(Date.now(), 2)
   },
   {
     id: uuid(),
-    name: 'Critical Alerts',
-    imageUrl: '/static/images/products/product_1.png',
+    name: '9',
+    imageUrl: '/static/Icons/stadler_green.png',
     updatedAt: subHours(Date.now(), 3)
-  },
-  {
-    id: uuid(),
-    name: 'Total Alerts',
-    imageUrl: '/static/images/products/product_1.png',
-    updatedAt: subHours(Date.now(), 5)
   }
 ];
 
@@ -48,7 +42,7 @@ export const LatestProducts = (props) => (
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}
-      title="KPI and Alerts Monitoring  "
+      title=" Summary  "
     />
     <Divider />
     <List>
