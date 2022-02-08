@@ -9,7 +9,7 @@ const Mapleaf = (props) => {
   return (
     
     //53.437389, -2.98517
-    <Map height={600} defaultCenter={[props.lat,props.longs]} defaultZoom={11}> 
+    <Map height={600} width={400} defaultCenter={[props.lat,props.longs]} defaultZoom={11}> 
     <Overlay anchor={[53.437389, -2.98517]} >
     <Link href="/screen1red">
    <img src='https://raw.githubusercontent.com/humblefool1997/CDN_ASSETS/main/stadler_red.png' width={20} height={20} alt='' />

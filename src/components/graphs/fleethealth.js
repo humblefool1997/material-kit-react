@@ -32,7 +32,11 @@ const Fleethealth = () =>{
   clickToggle = 'false'
   emptyColor = 'false'
   legend = "true"
+  height = "600"
+  width = "400"
 
-   />;
+   />
+   
+   ;
 }
 export default Fleethealth;

@@ -56,8 +56,8 @@ export const Summary = (props) => (
               alt={product.name}
               src={product.imageUrl}
               style={{
-                height: 48,
-                width: 48
+                height: 40,
+                width: 40
               }}
             />
           </ListItemAvatar>
