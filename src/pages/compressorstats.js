@@ -14,7 +14,7 @@ const Compressorstats = () => (
   <>
     <Head>
       <title>
-        Compressor Stats
+      COMPRESSOR STAT
       </title>
     </Head>
     <Box
@@ -94,17 +94,7 @@ const Compressorstats = () => (
             xl={3}
             xs={12}
           >
-            {/*
-            <TrafficByDevice sx={{ height: '100%' }} />
-          </Grid>
-          <Grid
-            item
-            lg={4}
-            md={6}
-            xl={3}
-            xs={12}
-          >
-            */}
+            {}
           
            
           </Grid>

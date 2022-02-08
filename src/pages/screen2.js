@@ -3,11 +3,6 @@ import { Box, Container, Link } from '@mui/material';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { DataGrid } from '@mui/x-data-grid';
 import Button from '@mui/material/Button';
-function getFullName(params) {
-  return `${params.row.firstName || ''} ${params.row.lastName || ''}`;
-}
-
-
 const columns = [
  
   {

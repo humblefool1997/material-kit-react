@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
-import { Compressortracker} from '../components/dashboard/compressortracker'
+import { Compressortracker} from '../components/dashboard/compressortracker';
 import { DashboardLayout } from '../components/dashboard-layout';
-import dynamic from  'next/dynamic'
-import { LatestProducts } from '../components/dashboard/latest-products';
-const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
+import dynamic from  'next/dynamic';
+const Unitmapleaf = dynamic(() => import('../components/mapopenstreet/unitmapleaf'), { ssr: false });
+import UnitTable from 'src/components/DataTables/UnitTable';
 const Screen1 = () => (
   <>
     <Head>
@@ -83,24 +83,19 @@ const Screen1 = () => (
             xl={9}
             xs={12}
           >
+          
       
-      <Mapleaf lat={53.08068085} longs={-2.42459011} sx={{ height: '100%' }} />
+      <Unitmapleaf lat={53.437389} longs={-2.98517} sx={{ height: '50%' }} />
 
           {/* here */} 
     
-          
+      
 
           </Grid>
-          <Grid
-            item
-            lg={4}
-            md={6}
-            xl={3}
-            xs={12}
-          >
+       
+
+  <UnitTable sx={{ height: '100%' }}/>
           
- {/* <LatestProducts sx={{ height: '100%' }} /> */}
-          </Grid>
           <Grid
             item
             lg={8}
