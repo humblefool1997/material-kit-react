@@ -80,14 +80,7 @@ const columns = [
     headerAlign: 'center',
   },
   
-  {
-    field: 'fc_a_b',
-    headerName: 'Functioning Compressor',
-    width: 220,
-    headerClassName: 'super-app-theme--header',
-    headerAlign: 'center',
-   
-  },
+  
   
   {
     field: 'location',
@@ -121,6 +114,14 @@ const columns = [
     type: 'number',
     headerClassName: 'super-app-theme--header',
     headerAlign: 'justify',
+   
+  },
+  {
+    field: 'fc_a_b',
+    headerName: 'Functioning Compressor',
+    width: 220,
+    headerClassName: 'super-app-theme--header',
+    headerAlign: 'center',
    
   }
   
