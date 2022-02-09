@@ -10,7 +10,9 @@ import Trend from 'react-trend';
 
 
 const Transition = forwardRef(function Transition(props, ref) {
-  return <Slide direction="down" ref={ref} {...props} />;
+  return <Slide direction="down"
+ref={ref}
+{...props} />;
 });
 
 const TrendGraph = (props) => {
@@ -26,7 +28,8 @@ const TrendGraph = (props) => {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button variant="outlined"
+onClick={handleClickOpen}>
         {props.trend}
       </Button>
       <Dialog

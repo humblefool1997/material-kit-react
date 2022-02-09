@@ -83,7 +83,9 @@ const Screen1amber = () => (
             xs={12}
           >
       
-      <Mapleaf lat={53.55369949} longs={-3.07075} sx={{ height: '100%' }} />
+      <Mapleaf lat={53.55369949}
+longs={-3.07075}
+sx={{ height: '100%' }} />
 
           {/* here */} 
     

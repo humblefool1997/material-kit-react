@@ -60,7 +60,8 @@ export const Compressortrackerred = (props) => (
     />
     <Divider />
 
-    <Stack direction="row" spacing={70} >
+    <Stack direction="row"
+spacing={70} >
     <Button fullWidth >Unit No:777016</Button>
     <FormControl fullWidth  >
         <InputLabel id="demo-simple-select-label">Unit Number</InputLabel>
@@ -91,16 +92,23 @@ export const Compressortrackerred = (props) => (
     <ImageLoader/>
     </List>
 
-    <Stack direction="row" spacing={50}>
+    <Stack direction="row"
+spacing={50}>
     
-    <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-       <LinearProgress variant='determinate' color="error" value="30" />
+    <Stack sx={{ width: '30%', color: 'grey.500' }}
+spacing={1}>
+       <LinearProgress variant='determinate'
+color="error"
+value="30" />
       <Button>Compressor B Health 30%</Button>
      </Stack>
      
      
-    <Stack sx={{ width: '30%', color: 'grey.500' }} spacing={1}>
-      <LinearProgress  variant="determinate" color="error" value="20" />
+    <Stack sx={{ width: '30%', color: 'grey.500' }}
+spacing={1}>
+      <LinearProgress  variant="determinate"
+color="error"
+value="20" />
       <Button>Compressor A Health 20%</Button>
     </Stack>
     

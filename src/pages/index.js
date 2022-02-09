@@ -26,18 +26,25 @@ const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { s
 
 </Grid>
 <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={3}>
-        <Grid item xs="auto">
-        <Mapleaf lat={53.437389} longs={-2.98517}  sx={{ height: '50%' }} />
+      <Grid container
+spacing={3}>
+        <Grid item
+xs="auto">
+        <Mapleaf lat={53.437389}
+longs={-2.98517}
+sx={{ height: '50%' }} />
 
         </Grid>
-        <Grid item xs="auto">
+        <Grid item
+xs="auto">
         <Summary />
 
         </Grid>
-        <Grid item xs>
+        <Grid item
+xs>
         <Fleethealth />
-        <Stack direction="row" spacing={1}>
+        <Stack direction="row"
+spacing={1}>
         <TrendGraph trend="Week " />
         <TrendGraph trend="Month " />
         <TrendGraph trend="Year " />
