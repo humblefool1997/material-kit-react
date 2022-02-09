@@ -1,6 +1,9 @@
 import { Map,Overlay } from "pigeon-maps"
-import { useRouter } from 'next/router'
 import Link from 'next/link'
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import { CardHeader } from "@mui/material";
+
 
 
 
@@ -8,7 +11,9 @@ const Mapleaf = (props) => {
   
   return (
     
-    //53.437389, -2.98517
+   <Card sx={{ minWidth: 275 }}>
+     
+      <CardContent>
     <Map height={600}
 width={400}
 defaultCenter={[props.lat,props.longs]}
@@ -120,6 +125,8 @@ alt='' />
   
   
   </Map>
+  </CardContent>
+  </Card>
   )
 }
 

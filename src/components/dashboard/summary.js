@@ -14,9 +14,6 @@ import {
   ListItemAvatar,
   ListItemText
 } from '@mui/material';
-
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 const TrendGraph = dynamic(() => import('../trends/TrendTable'), { ssr: false });
 
 const products = [
@@ -41,21 +38,13 @@ const products = [
 ];
 
 const handleClickOpen = () => {
-  setOpen(true);
+  
 };
 
-const handleClose = () => {
-  setOpen(false);
-};
+
 
 
 export const Summary = (props) => (
-  
-
-  
-
-
-
   <Card {...props}>
     <CardHeader
       subtitle={`${products.length} in total`}
@@ -88,7 +77,7 @@ export const Summary = (props) => (
             secondary={`Updated ${formatDistanceToNow(product.updatedAt)}`}
           />
          
-          <TrendGraph trend=".." />
+       
         </ListItem>
       ))}
     </List>

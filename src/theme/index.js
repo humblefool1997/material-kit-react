@@ -169,9 +169,9 @@ export const theme = createTheme({
       dark: '#0B815A',
       contrastText: '#FFFFFF'
     },
-    // success == 
-    // warning ==
-    // 
+    // success == success
+    // warning == eighteen
+    // error == eight
     success: {
       main: '#14B8A6',
       light: '#43C6B7',

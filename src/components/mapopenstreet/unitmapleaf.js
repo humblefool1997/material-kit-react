@@ -10,6 +10,7 @@ const Unitmapleaf = (props) => {
     
     //53.437389, -2.98517
     <Map height={200}
+         width = {200}
 defaultCenter={[props.lat,props.longs]}
 defaultZoom={16}> 
     <Overlay anchor={[53.437389, -2.98517]} >

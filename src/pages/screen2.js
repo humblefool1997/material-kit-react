@@ -78,6 +78,7 @@ const columns = [
     width: 90,
     headerClassName: 'super-app-theme--header',
     headerAlign: 'center',
+    align: 'center',
   },
   
   
@@ -96,7 +97,7 @@ const columns = [
     width: 100,
     headerClassName: 'super-app-theme--header',
     headerAlign: 'center',
-    
+    align: 'center',
   },
   {
     field: 'dutycycle',
@@ -105,6 +106,7 @@ const columns = [
     type: 'number',
     headerClassName: 'super-app-theme--header',
     headerAlign: 'center',
+    align: 'center',
    
   },
   {
@@ -114,6 +116,7 @@ const columns = [
     type: 'number',
     headerClassName: 'super-app-theme--header',
     headerAlign: 'justify',
+    align: 'center',
    
   },
   {
@@ -122,6 +125,7 @@ const columns = [
     width: 220,
     headerClassName: 'super-app-theme--header',
     headerAlign: 'center',
+    align: 'center',
    
   }
   

@@ -3,7 +3,7 @@ import { Box, Container, Grid } from '@mui/material';
 import  {Compressortrackerred} from '../components/dashboard/compressortrackerred';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
-import { LatestProducts } from '../components/dashboard/latest-products';
+import { LatestProducts } from '../components/dashboard/summary';
 const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { ssr: false });
 const Screen1red = () => (
   <>

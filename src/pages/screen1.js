@@ -5,6 +5,7 @@ import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic';
 const Unitmapleaf = dynamic(() => import('../components/mapopenstreet/unitmapleaf'), { ssr: false });
 import UnitTable from 'src/components/DataTables/UnitTable';
+import {Stack} from '@mui/material/Stack';
 const Screen1 = () => (
   <>
     <Head>
@@ -35,78 +36,33 @@ const Screen1 = () => (
           </Grid>
           <Grid
             item
-            lg={8}
-            md={12}
-            xl={9}
+            lg={3}
+            sm={6}
+            xl={3}
             xs={12}
           >
-       
+            
           </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
-        <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          ></Grid>
+       
+         
         
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
          
-          </Grid>
-          <Grid
-            item
-            xl={3}
-            lg={3}
-            sm={6}
-            xs={12}
-          >
          
-          </Grid>
-          <Grid
-            item
-            lg={8}
-            md={12}
-            xl={9}
-            xs={12}
-          >
+          <UnitTable sx={{ height: '100%' }}/>
           
-      
-      <Unitmapleaf lat={53.437389}
-longs={-2.98517}
-sx={{ height: '50%' }} />
 
-          {/* here */} 
+          <Unitmapleaf lat={53.437389} longs={-2.98517}/>
+         
+
+
+
+      
+
     
-      
-
-          </Grid>
        
 
-  <UnitTable sx={{ height: '100%' }}/>
           
-          <Grid
-            item
-            lg={8}
-            md={12}
-            xl={9}
-            xs={12}
-          >
-          
-          </Grid>
+        
         </Grid>
       </Container>
     </Box>
