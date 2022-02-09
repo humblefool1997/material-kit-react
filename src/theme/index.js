@@ -169,10 +169,10 @@ export const theme = createTheme({
       dark: '#0B815A',
       contrastText: '#FFFFFF'
     },
-    // success == success
-    // warning == eighteen
-    // error == eight
-    success: {
+    // palak == palak
+    // orange == eighteen
+    // apple == eight
+    palak: {
       main: '#14B8A6',
       light: '#43C6B7',
       dark: '#0E8074',
@@ -184,13 +184,13 @@ export const theme = createTheme({
       dark: '#0B79D0',
       contrastText: '#FFFFFF'
     },
-    warning: {
+    orange: {
       main: '#FFB020',
       light: '#FFBF4C',
       dark: '#B27B16',
       contrastText: '#FFFFFF'
     },
-    error: {
+    apple: {
       main: '#D14343',
       light: '#DA6868',
       dark: '#922E2E',

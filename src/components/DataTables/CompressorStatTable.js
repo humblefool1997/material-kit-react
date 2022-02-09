@@ -44,9 +44,9 @@ const columns = [
   ];
   
   const rows = [
-    { id: 7, status: 'warning', fc_a_b: 'A',health: 25, dutycycle: '89', operatinghours: '3500', days_last_maintained: 3,
+    { id: 7, status: 'orange', fc_a_b: 'A',health: 25, dutycycle: '89', operatinghours: '3500', days_last_maintained: 3,
      lastmaintaineddate: new Date(2021, 1, 1),   },
-     { id: 777001, status: 'success', fc_a_b: 'A',health: 25, dutycycle: '89', operatinghours: '3500', days_last_maintained: 3,
+     { id: 777001, status: 'palak', fc_a_b: 'A',health: 25, dutycycle: '89', operatinghours: '3500', days_last_maintained: 3,
      lastmaintaineddate: new Date(2022, 11, 1)   },
     
    

@@ -31,12 +31,15 @@ const Mapleaf = dynamic(() => import('../components/mapopenstreet/mapleaf'), { s
 
 <Grid item xs="auto">
 
-<Fleethealth />
+<Fleethealth  />
 
 
 </Grid>
 <Grid item xs="auto">
-<Summary></Summary>
+<Summary sx={{
+   minWidth: 300,
+   minHeight: 650
+}}></Summary>
 </Grid>
   </Grid>
   </Box>

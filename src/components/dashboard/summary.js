@@ -1,6 +1,7 @@
 import { formatDistanceToNow, subHours } from 'date-fns';
 import { v4 as uuid } from 'uuid';
 import Link from 'next/link'
+import { Stack } from '@mui/material';
 import dynamic from  'next/dynamic'
 import {
   Box,
@@ -38,6 +39,7 @@ const products = [
 ];
 
 const handleClickOpen = () => {
+    
   
 };
 
@@ -47,42 +49,20 @@ const handleClickOpen = () => {
 export const Summary = (props) => (
   <Card {...props}>
     <CardHeader
-      subtitle={`${products.length} in total`}
-      title=" Summary  "
+      
+      align=  "center"
+      title="Summary "
     />
+
+
     <Divider />
-    <List>
-      {products.map((product, i) => (
-        <ListItem
-          divider={i < products.length - 1}
-          key={product.id}
-        >
-          <ListItemAvatar>
-            <div>
-            <img
-              alt={product.name}
-              src={product.imageUrl}
-              style={{
-                height: 40,
-                width: 40
-              }
-            
-            }
-            onClick={() => handleClickOpen()} 
-            />
-            </div>
-          </ListItemAvatar>
-          <ListItemText
-            primary={product.name}
-            secondary={`Updated ${formatDistanceToNow(product.updatedAt)}`}
-          />
-         
-       
-        </ListItem>
-      ))}
-    </List>
-    <Divider />
-  
+  <Stack spacing={8}>
+    <img src="/static/Icons/stadler_red.png" width="80" height="80"></img>
+    <Divider/>
+    <img src="/static/Icons/stadler_amber.png" width="80" height="80"></img>
+    <Divider/>
+    <img src="/static/Icons/stadler_green.png" width="80" height="80"></img>
+  </Stack>
      
   </Card>
   

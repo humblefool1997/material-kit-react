@@ -51,6 +51,6 @@ SeverityPill.propTypes = {
     'error',
     'info',
     'warning',
-    'success'
+    'palak'
   ])
 };

@@ -75,7 +75,7 @@ spacing={70} >
           <MenuItem value={10}>777001</MenuItem>
           </Link>
           <Link href='/screen1amber'>
-          <MenuItem value={20}>777003</MenuItem>
+          <MenuItem value={20}>777004</MenuItem>
           </Link>
           <Link href='/screen1red'>
           <MenuItem value={30}>777016</MenuItem>
@@ -98,7 +98,7 @@ spacing={50}>
     <Stack sx={{ width: '30%', color: 'grey.500' }}
 spacing={1}>
        <LinearProgress variant='determinate'
-color="error"
+color="apple"
 value="30" />
       <Button>Compressor B Health 30%</Button>
      </Stack>
@@ -107,7 +107,7 @@ value="30" />
     <Stack sx={{ width: '30%', color: 'grey.500' }}
 spacing={1}>
       <LinearProgress  variant="determinate"
-color="error"
+color="apple"
 value="20" />
       <Button>Compressor A Health 20%</Button>
     </Stack>

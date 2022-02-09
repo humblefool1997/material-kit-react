@@ -12,7 +12,7 @@ const Mapleaf = (props) => {
   return (
     
    <Card sx={{ minWidth: 275 }}>
-     
+   
       <CardContent>
     <Map height={600}
 width={400}
