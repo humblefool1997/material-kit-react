@@ -54,7 +54,7 @@ const Fleethealth = () =>{
 
 
     <CardActions>
-   <TrendGraph trend="Week"></TrendGraph>
+   <TrendGraph trend="Week" url="https://github.com/humblefool1997/CDN_ASSETS/raw/main/week.png" ></TrendGraph>
    <TrendGraph trend="Month"></TrendGraph>
    <TrendGraph trend="Year"></TrendGraph>
    </CardActions>

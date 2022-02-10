@@ -1,17 +1,14 @@
 import { useState,forwardRef }from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import DialogActions from '@mui/material/DialogActions';
-import DialogContent from '@mui/material/DialogContent';
-import DialogTitle from '@mui/material/DialogTitle';
+
 import Slide from '@mui/material/Slide';
-
-
 const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="down"
 ref={ref}
 {...props} />;
 });
+
 
 const TrendGraph = (props) => {
   const [open, setOpen] = useState(false);
@@ -31,18 +28,22 @@ onClick={handleClickOpen}>
         {props.trend}
       </Button>
       <Dialog
+        maxWidth="lg"
         open={open}
         TransitionComponent={Transition}
         keepMounted
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{ props.trend + " Fleet Health"}</DialogTitle>
-        <DialogContent>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
-        </DialogActions>
+       
+          <img
+            src={props.url}
+            height="600"
+            width="600"
+            loading="lazy"
+          />
+       
+      
       </Dialog>
     </div>
   );
