@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import * as React from 'react';
 import { Box,Grid } from '@mui/material';
-import  {Summary}  from '../components/dashboard/Summary';
+import  Summary  from '../components/dashboard/Summary';
 import { DashboardLayout } from '../components/dashboard-layout';
 import dynamic from  'next/dynamic'
 import Fleethealth from 'src/components/graphs/fleethealth';
