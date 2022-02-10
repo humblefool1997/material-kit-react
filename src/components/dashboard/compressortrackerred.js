@@ -99,8 +99,8 @@ spacing={50}>
 spacing={1}>
        <LinearProgress variant='determinate'
 color="apple"
-value="30" />
-      <Button>Compressor B Health 30%</Button>
+value="22" />
+      <Button>Compressor B Health 22%</Button>
      </Stack>
      
      
@@ -108,8 +108,8 @@ value="30" />
 spacing={1}>
       <LinearProgress  variant="determinate"
 color="apple"
-value="20" />
-      <Button>Compressor A Health 20%</Button>
+value="25" />
+      <Button>Compressor A Health 25%</Button>
     </Stack>
     
     </Stack>

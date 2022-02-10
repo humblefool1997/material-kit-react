@@ -3,19 +3,19 @@ import Link from 'next/link'
 
 
 
-const Unitmapleaf = (props) => {
+const Unitmapleafamber = (props) => {
   
   return (
     
-    //53.437389, -2.98517
+  
     <Map height={300}
          width = {
            300}
 defaultCenter={[props.lat,props.longs]}
 defaultZoom={16}> 
-    <Overlay anchor={[53.437389, -2.98517]} >
-    <Link href="/screen1">
-   <img src='https://raw.githubusercontent.com/humblefool1997/CDN_ASSETS/main/stadler_green.png'
+    <Overlay anchor={[53.43753815, -2.9856801]} >
+    <Link href="/screen1amber">
+   <img src='https://raw.githubusercontent.com/humblefool1997/CDN_ASSETS/main/stadler_amber.png'
 width={20}
 height={20}
  />
@@ -26,4 +26,4 @@ height={20}
   )
 }
 
-export default Unitmapleaf;
+export default Unitmapleafamber;

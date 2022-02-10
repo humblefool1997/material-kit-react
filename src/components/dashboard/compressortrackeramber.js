@@ -84,7 +84,7 @@ spacing={70} >
       </FormControl>
 
    </Stack>
-    <Box sx={{ minWidth: 100 }}>
+    <Box sx={{ minWidth: 90 }}>
      
     </Box>
     
@@ -98,18 +98,18 @@ spacing={50}>
     <Stack sx={{ width: '30%', color: 'grey.500' }}
 spacing={1}>
        <LinearProgress variant='determinate'
-color="orange"
-value="50" />
-      <Button>Compressor B Health 50%</Button>
+color="palak"
+value="80" />
+      <Button>Compressor B Health 80%</Button>
      </Stack>
      
      
     <Stack sx={{ width: '30%', color: 'grey.500' }}
 spacing={1}>
       <LinearProgress  variant="determinate"
-color="palak"
-value="90" />
-      <Button>Compressor A Health 90%</Button>
+color="orange"
+value="60" />
+      <Button>Compressor A Health 60%</Button>
     </Stack>
     
     </Stack>

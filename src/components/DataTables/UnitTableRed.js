@@ -133,14 +133,14 @@ const columns = [
 ];
 
 const rows = [
-  { id: 144001, status: 'palak', fc_a_b: 'A',  health: '84%', dutycycle: '35', 
-  operatinghours: '2500',days: 150 },
-  { id: 144002, status: 'palak', fc_a_b: 'B',  health: '90%', dutycycle: '30',
-  operatinghours: '2600', days: 150
+  { id: 123111, status: 'apple', fc_a_b: 'A',  health: '25%', dutycycle: '65', 
+  operatinghours: '3100',days: 60 },
+  { id: 123112, status: 'apple', fc_a_b: 'B',  health: '22%', dutycycle: '70',
+  operatinghours: '3500', days: 60
 }
  
 ];
-const UnitTable = (props) =>{
+const UnitTableRed = (props) =>{
 return (
 <Box
   component="main"
@@ -183,4 +183,4 @@ return (
 );
 } 
 
-export default UnitTable;
+export default UnitTableRed;
