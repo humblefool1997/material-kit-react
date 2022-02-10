@@ -10,7 +10,7 @@ ref={ref}
 });
 
 
-const CompressorStatsDialog = (props) => {
+const CompressorStatsDialogAmber = (props) => {
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
@@ -51,4 +51,4 @@ onClick={handleClickOpen}>
 
 };
 
-export default CompressorStatsDialog;
+export default CompressorStatsDialogAmber;

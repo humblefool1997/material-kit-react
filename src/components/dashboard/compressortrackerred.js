@@ -22,8 +22,7 @@ import {
   ListItemAvatar,
   ListItemText
 } from '@mui/material';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import CompressorStatsDialogRed from '../CompressorStat/CompressorStateDialogRed';
 
 const products = [
   {
@@ -101,6 +100,7 @@ spacing={1}>
 color="apple"
 value="22" />
       <Button>Compressor B Health 22%</Button>
+      <CompressorStatsDialogRed/>
      </Stack>
      
      

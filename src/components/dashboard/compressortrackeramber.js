@@ -22,8 +22,7 @@ import {
   ListItemAvatar,
   ListItemText
 } from '@mui/material';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import CompressorStatsDialogAmber from '../CompressorStat/CompressorStatsDialogAmber';
 
 const products = [
   {
@@ -100,6 +99,7 @@ spacing={1}>
        <LinearProgress variant='determinate'
 color="palak"
 value="80" />
+       <CompressorStatsDialogAmber/>
       <Button>Compressor B Health 80%</Button>
      </Stack>
      

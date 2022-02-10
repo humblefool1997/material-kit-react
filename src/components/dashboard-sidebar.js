@@ -24,11 +24,6 @@ const items = [
     href: '/screen1',
     icon: (<UsersIcon fontSize="small" />),
     title: 'Unit Overview'
-  },
-  {
-    href: '/compressorstats',
-    icon: (<UserIcon fontSize="small" />),
-    title: 'Compressor Stats'
   }
 ];
 
