@@ -37,7 +37,7 @@ onClick={handleClickOpen}>
       >
        
           <img
-            src={`https://github.com/humblefool1997/CDN_ASSETS/raw/main/16red.png`}
+            src={`https://github.com/humblefool1997/CDN_ASSETS/raw/main/16Red.png`}
             height="900"
             width="1200"
             loading="lazy"
