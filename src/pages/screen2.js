@@ -132,28 +132,17 @@ const columns = [
 ];
 
 const rows = [
-  { id: 777001, status: 'palak', fc_a_b: 'A', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89', 
-  operatinghours: '3500' },
-  { id: 777002, score:-12, status: 'palak', fc_a_b: 'B', location: 'Formby', health: 25, dutycycle: '89',
-  operatinghours: '4600'
-},
-  { id: 777003,  status: 'palak', fc_a_b: 'B', location: 'Sefton', health: 25, dutycycle: '89',
-  operatinghours: '1100'
-},
-  { id: 777004,  status: 'palak',fc_a_b: 'B', location: 'Kirkdale Depot,Liverpool', health: 25, dutycycle: '89',
-  operatinghours: '1500'
-},
-{ id: 777005,  status: 'palak',fc_a_b: 'A', location: 'Formby', health: 25, dutycycle: '89',
-  operatinghours: '1500'
-},
-  { id: 777006,  status: 'palak', fc_a_b: 'A', location: 'Cheshire', health: 25, dutycycle: '89',
-  operatinghours: '1500' 
-},
-  { id: 777007,  status: 'palak', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777008,  status: 'palak', fc_a_b: 'A', location: 'St Helens', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777016,  status: 'apple',   fc_a_b: 'A', location: 'Wallasey, Wirral', health: 80, dutycycle: '89',operatinghours: '1500' },
-  { id: 777010,  status: 'orange', fc_a_b: 'A', location: 'Hale, Halton', health: 25, dutycycle: '89',operatinghours: '1500' },
-  { id: 777011,  status: 'orange', fc_a_b: 'A', location: 'Kirkdale Depot', health: 25, dutycycle: '89',operatinghours: '1500' },
+  { id: 777016,  status: 'apple', fc_a_b: 'B', location: 'Wallasey, Wirral', health: 25, dutycycle: '70', operatinghours: '3500' },
+  { id: 777004,  status: 'orange', fc_a_b: 'A', location: 'Sefton', health: 50, dutycycle: '50',operatinghours: '2400'},
+  { id: 777018,  status: 'orange',  fc_a_b: 'A', location: 'Hale, Halton', health: 50, dutycycle: '45',operatinghours: '1900'},
+  { id: 777001,  status: 'palak',  fc_a_b: 'B', location: 'Kirkdale Depot,Liverpool', health: 95, dutycycle: '30',operatinghours: '2600'},
+  { id: 777003,  status: 'palak',  fc_a_b: 'A', location: 'Kirkdale Depot,Liverpool', health: 96, dutycycle: '35',operatinghours: '1600'},
+  { id: 777005,  status: 'palak',  fc_a_b: 'B', location: 'Formby', health: 98, dutycycle: '35',operatinghours: '1750' },
+  { id: 777010,  status: 'palak',  fc_a_b: 'A', location: 'St Helens', health: 95, dutycycle: '89',operatinghours: '840' },
+  { id: 777014,  status: 'palak',  fc_a_b: 'A', location: 'St Helens', health: 95, dutycycle: '89',operatinghours: '760' },
+  { id: 777015,  status: 'palak',  fc_a_b: 'B', location: 'Wallasey, Wirral', health: 95, dutycycle: '89',operatinghours: '550' },
+  { id: 777034,  status: 'palak', fc_a_b: 'A', location: 'Hale, Halton', health: 98, dutycycle: '89',operatinghours: '250' },
+ 
 
  
 ];

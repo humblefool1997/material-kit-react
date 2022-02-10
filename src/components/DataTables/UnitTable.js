@@ -122,7 +122,7 @@ const columns = [
   {
     field: 'days',
     headerName: 'Days Since Last Exam ',
-    width: 100,
+    width: 150,
     headerClassName: 'super-app-theme--header',
     headerAlign: 'center',
     align: 'center',
