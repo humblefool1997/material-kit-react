@@ -38,8 +38,7 @@ onClick={handleClickOpen}>
        
           <img
             src={props.url}
-            height="600"
-            width="600"
+
             loading="lazy"
           />
        
