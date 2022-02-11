@@ -99,8 +99,9 @@ spacing={1}>
        <LinearProgress variant='determinate'
 color="palak"
 value="80" />
-       <CompressorStatsDialogAmber/>
+       
       <Button>Compressor B Health 80%</Button>
+      <CompressorStatsDialogAmber/>
      </Stack>
      
      

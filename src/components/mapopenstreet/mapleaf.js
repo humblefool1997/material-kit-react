@@ -14,7 +14,7 @@ const Mapleaf = (props) => {
    <Card sx={{ minWidth: 275 }}>
    
       <CardContent>
-    <Map height={600}
+    <Map height={580}
 width={400}
 defaultCenter={[props.lat,props.longs]}
 defaultZoom={11}> 

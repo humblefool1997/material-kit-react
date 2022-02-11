@@ -32,12 +32,7 @@ const Screen1Red = () => (
   <Container maxWidth={false}>
    <Grid>  <Compressortrackerred sx={{ width: '100%' }} /> </Grid>     
    <Grid container direction={'row'}>
-  
-   
-   </Grid>
-  </Container> 
-  <Box sx={{ flexGrow: 1 }}>
-  <Grid container spacing={3}>
+   <Grid container spacing={3}>
   <Grid item xs={3}>
  
   <Unitmapleafred lat={53.426521} longs={-3.066215}/> 
@@ -47,6 +42,11 @@ const Screen1Red = () => (
     </Grid>
     
       </Grid>
+   
+   </Grid>
+  </Container> 
+  <Box sx={{ flexGrow: 1 }}>
+  
     </Box>
   </Box>
   </>
